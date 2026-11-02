@@ -1,0 +1,19 @@
+# Contexte interne du projet : ne jamais publier
+CONTEXT.md
+
+# Journaux et sauvegardes locales
+*.log
+*.bak
+
+# Sorties d'audit brutes : peuvent contenir hostname, utilisateurs, IP
+# Publier seulement une version nettoyée dans evidence/RESULTS.md
+evidence/before/*
+!evidence/before/.gitkeep
+evidence/after/*
+!evidence/after/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
